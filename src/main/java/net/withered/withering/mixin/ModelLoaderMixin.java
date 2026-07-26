@@ -23,7 +23,7 @@ public abstract class ModelLoaderMixin {
                 String namespace = Registries.ITEM.getId(item).getNamespace();
                 String base = splitItem.getModelBaseName();
 
-                loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(namespace, base + "_gui")));
+                loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(namespace, base)));
                 loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(namespace, base + "_hand")));
             }
         }

@@ -27,10 +27,10 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() instanceof SplitModelItem splitItem) {
             String namespace = Registries.ITEM.getId(stack.getItem()).getNamespace();
 
-            String path = (renderMode == ModelTransformationMode.GUI ||
-                    renderMode == ModelTransformationMode.FIXED ||
-                    renderMode == ModelTransformationMode.GROUND)
-                    ? splitItem.getModelBaseName() + "_gui"
+            String path = (renderMode == ModelTransformationMode.GUI
+                    || renderMode == ModelTransformationMode.FIXED
+                    || renderMode == ModelTransformationMode.GROUND)
+                    ? splitItem.getModelBaseName()
                     : splitItem.getModelBaseName() + "_hand";
 
             return models.getModelManager().getModel(
