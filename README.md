@@ -7,5 +7,6 @@ Currently includes:
 - Persistent Items
 - Custom Sweep Sound
 - Custom Crit Sound
+- Custom Knockback Sound
 
 See more info on the [wiki](https://github.com/Withered99/Withering-Api/wiki)
